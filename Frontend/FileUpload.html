@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload Page</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="FileUpload.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-left: 0;">
+                <ul class="nav navbar-nav">
+                    <li><a style="padding-left:0;" href="">Home</a></li>
+                    <li><a style="padding-left:0;" href="">About</a></li>
+                    <li><a style="padding-left:0;" href="">Contact</a></li>
+                    <li><a style="padding-left:0;" href="">Help</a></li>
+                </ul>
+
+                <form class="form-inline" id="SignIn">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Your Dashboard</a></li>
+                        <li class="active"><a href="">Your Transactions Overview</a></li>
+                        <li><a href="">Your Charity</a></li>
+                        <li><a href="">Profile</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- File Upload Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-0"></div>
+            <div id="content" class="col-lg-8">
+                <h1>TRANSACTIONS OVERVIEW</h1>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <!-- File Upload Form-->
+        <p>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Please upload your banking data in a .csv file:</label>
+                    <input type="file" class="form-control-file" value="Upload file" id="exampleFormControlFile1">
+                </div>
+            </form>
+        </p>
+
+        <!-- Transaction Table (Datum, Zweck, Betrag, Label, Good/Bood, Checkfield)-->
+
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Use</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Label</th>
+                    <th scope="col">Transaction Classification</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>01.11.2019</td>
+                    <td>Spisesturne</td>
+                    <td>15 DKK</td>
+                    <td>Food</td>
+                    <td> 
+                    <input class="form-check-input" type="radio" value="" name="four" id="checkbox_good">
+                    <label class="form-check-label" for="checkbox_good">
+                        Good
+                    </label>
+                    <input class="form-check-input" type="radio" value="" name="four" id="checkbox_bad">
+                    <label class="form-check-label" for="checkbox_bad">
+                        Bad
+                    </label>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>03.11.2019</td>
+                    <td>Lidl</td>
+                    <td>195,50 DKK</td>
+                    <td>Groceries</td>
+                    <td> 
+                            <input class="form-check-input" type="radio" value="" name="three" id="checkbox_good">
+                            <label class="form-check-label" for="checkbox_good">
+                                Good
+                            </label>
+                            <input class="form-check-input" type="radio" value="" name="three" id="checkbox_bad">
+                            <label class="form-check-label" for="checkbox_bad">
+                                Bad
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>04.11.2019</td>
+                    <td>Zara</td>
+                    <td>322,15 DKK</td>
+                    <td>Shopping</td>
+                    <td> 
+                            <input class="form-check-input" type="radio" value="" name="one" id="checkbox_good">
+                            <label class="form-check-label" for="checkbox_good">
+                                Good
+                            </label>
+                            <input class="form-check-input" type="radio" name="one" value="" id="checkbox_bad">
+                            <label class="form-check-label" for="checkbox_bad">
+                                Bad
+                            </label>
+                    </td>
+                </tr>
+                <tr class="badTransaction" >
+                    <th scope="row">4</th>
+                    <td>05.11.2019</td>
+                    <td>McDonalds</td>
+                    <td>150 DKK</td>
+                    <td>Fast Food</td>
+                    <td> 
+                            <input class="form-check-input" type="radio" name="two" value="" id="checkbox_good">
+                            <label class="form-check-label" for="checkbox_good">
+                                Good
+                            </label>
+                            <input class="form-check-input" type="radio" value="" name="two" id="checkbox_bad">
+                            <label class="form-check-label" for="checkbox_bad">
+                                Bad
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                        <th scope="row">5</th>
+                        <td>04.11.2019</td>
+                        <td>Meny</td>
+                        <td>45,90 DKK</td>
+                        <td>Groceris</td>
+                        <td> 
+                                <input class="form-check-input" type="radio" value="" name="five" id="checkbox_good">
+                                <label class="form-check-label" for="checkbox_good">
+                                    Good
+                                </label>
+                                <input class="form-check-input" type="radio" name="five" value="" id="checkbox_bad">
+                                <label class="form-check-label" for="checkbox_bad">
+                                    Bad
+                                </label>
+                        </td>
+                    </tr>
+                </tr>
+                <tr class="badTransaction" >
+                    <th scope="row">6</th>
+                    <td>08.11.2019</td>
+                    <td>Subway</td>
+                    <td>75 DKK</td>
+                    <td>Fast Food</td>
+                    <td> 
+                            <input class="form-check-input" type="radio" name="six" value="" id="checkbox_good">
+                            <label class="form-check-label" for="checkbox_good">
+                                Good
+                            </label>
+                            <input class="form-check-input" type="radio" value="" name="six" id="checkbox_bad">
+                            <label class="form-check-label" for="checkbox_bad">
+                                Bad
+                            </label>
+                    </td>
+                </tr>
+                <tr>
+                        <th scope="row">7</th>
+                        <td>10.11.2019</td>
+                        <td>Nexus</td>
+                        <td>25 DKK</td>
+                        <td>Party</td>
+                        <td> 
+                                <input class="form-check-input" type="radio" value="" name="seven" id="checkbox_good">
+                                <label class="form-check-label" for="checkbox_good">
+                                    Good
+                                </label>
+                                <input class="form-check-input" type="radio" name="seven" value="" id="checkbox_bad">
+                                <label class="form-check-label" for="checkbox_bad">
+                                    Bad
+                                </label>
+                        </td>
+                    </tr>
+                </tr>
+            </tbody>
+        </table>
+
+</body>
+
+</html>
