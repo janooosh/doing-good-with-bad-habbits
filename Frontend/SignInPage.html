@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signIn</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="SignInPage.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- Navbar -->
+<div id="EverythingNavbar">
+<nav class="navbar navbar-default">
+        <div class="container"> 
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-left: 0;">
+            <ul class="nav navbar-nav">
+                <li><a style="padding-left:0;" href="">Home</a></li>
+                <li><a style="padding-left:0;" href="">About</a></li>
+                <li><a style="padding-left:0;" href="">Contact</a></li>
+                <li><a style="padding-left:0;" href="">Help</a></li>
+            </ul>
+  </div>
+</div>
+</nav>
+</div>
+
+
+<!-- Main Content -->
+<div id="EverythingContent">
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="#">
+            <h1 id="cA">User Registration</h1>
+            <p>Sign up now!</p>
+            <input id="un" type="text" placeholder="Username" value="" style="margin-top: 2px"/>
+            <input id="emailstore" type="email" placeholder="Email" value="" required/>
+            <input id="pw" type="password" placeholder="Password" value=""/>
+            <input id="rgstr_btn" type="submit" value="Login"/>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="#">
+            <h1 id="wel">WELCOME TO</h1>
+            <h4>Doing good with bad habits</h4>
+            <input id="userName" type="text" placeholder="Enter Username" value=""/>
+            <input id="userPw" type="password" placeholder="Enter Password" value=""/>
+            <input id="login_btn" type="submit" value="Login"/>
+
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Don't have an account yet?</h1>
+                <p>Enter your details</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript" src="SignInPage.js"></script>
+</body>
+</html>

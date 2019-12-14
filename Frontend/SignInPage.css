@@ -4,15 +4,33 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #f6f5f7;
+#EverythingContent {
+    background: url(https://images.unsplash.com/photo-1513147122760-ad1d5bf68cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80);
+	background-size: cover;
+	background-position: center;
+    font-family: 'Assistant', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    font-family: 'Montserrat', sans-serif;
     margin: -30px, 0, 50px;
+}
+
+#container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.navbar {
+    margin-bottom: 0px;
 }
 
 h1 {
@@ -53,8 +71,8 @@ a {
 
 #login_btn, #rgstr_btn, #signUp, #signIn {
     border-radius: 20px;
-    border: 1px solid #71B280;
-    background-color: #71B280;
+    border: 1px solid #B2987F;
+    background-color: #B2987F;
     color: #ffffff;
     font-size: 12px;
     font-weight: bold;
@@ -73,7 +91,7 @@ button:focus, #login_btn:focus, #rgstr_btn:focus {
 }
 
 button:hover, #login_btn:hover, #rgstr_btn:hover {
-    background-color: #134E5E;
+    background-color: #473C32;
     color: black;
     border-color: transparent;
     cursor: pointer;
@@ -111,18 +129,6 @@ input {
     padding: 12px 15px;
     margin: 8px 0;
     width: 100%;
-}
-
-.container {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.22);
-    position: relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
 }
 
 .form-container {
@@ -184,8 +190,8 @@ input {
 
 .overlay {
     background: #ffffff;
-    background: -webkit-linear-gradient(to right, #71B280, #134E5E);
-    background: linear-gradient(to right, #134E5E, #71B280);
+    background: -webkit-linear-gradient(to right, #FFDAB9, #473C32);
+    background: linear-gradient(to right, #473C32, #FFDAB9);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
