@@ -1,0 +1,40 @@
+body {
+    background: url(https://images.unsplash.com/photo-1513147122760-ad1d5bf68cdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+}
+
+#content {
+    text-align: center;
+    padding-top: 20%;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.3),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+h1 {
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+#button1 {
+    background-color: #FFDAB9;
+    border-color: #FFDAB9;
+    color: black;
+}
+
+.form-inline {
+    margin-top: 8px;
+}
+
+.signInFields {
+    margin-right: 5px;
+}
