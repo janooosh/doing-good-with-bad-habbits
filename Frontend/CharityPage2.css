@@ -1,0 +1,47 @@
+body {
+    font-family: 'Assistant', sans-serif;
+}
+
+p {
+    margin: 5%;
+}
+
+#classification {
+    margin-right: 10%
+}
+.form-check-label {
+    padding-right:20px;
+    text-decoration: none;
+
+}
+
+.badTransaction {
+    background-color: rgb(239,43,43,0.3);
+}
+
+.leftnav {
+    padding-left:0;
+}
+
+#texsst {
+    text-align: center;
+}
+
+#searchbar {
+    margin-top: 100px;
+}
+
+#searchbar input[type=text]{width:600px !important;}
+
+#button1 {
+    background-color: #FFDAB9;
+    border-color: #FFDAB9;
+    color: black;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#morecharities {
+    margin-top: 80px;
+}
+
