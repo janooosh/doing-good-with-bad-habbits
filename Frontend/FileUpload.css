@@ -1,5 +1,6 @@
 body {
 	font-family: 'Assistant', sans-serif;
+    text-align: center;
 }
 
 p {
@@ -21,4 +22,12 @@ p {
 
 .leftnav {
     padding-left:0;
+}
+
+#texsst {
+    text-align: center;
+}
+
+.search {
+    background-color: peachpuff;
 }

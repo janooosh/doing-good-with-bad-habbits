@@ -4,6 +4,7 @@ body {
     background-position: center;
     font-family: 'Assistant', sans-serif;
     color: white;
+    text-align: center;
 }
 
 #content {
@@ -37,4 +38,29 @@ h2 {
 
 .signInFields {
     margin-right: 5px;
+}
+
+#texsst {
+    text-align: center;
+}
+
+.search {
+    background-color: peachpuff;
+}
+
+form {
+    text-align: center;
+    padding: 0 30px;
+}
+
+input {
+    background-color: rgb(239, 239, 239);
+    padding: 13px 17px;
+    margin: 7px 0;
+    width: 50%;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
 }
