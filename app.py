@@ -1,7 +1,12 @@
 # app.py
 from flask import Flask, render_template, request   
 from ourupload import doupload
-app = Flask(__name__)             
+from cleaning_new import clean
+
+app = Flask(__name__)    
+
+UPLOAD_FOLDER = '/uploads'
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER         
 
 @app.route("/")   
 def hello():                                   
@@ -13,7 +18,10 @@ def hello():
 @app.route('/upload', methods = ['GET', 'POST'])
 def upload_file():
    if request.method == 'POST':
+      bank = request.form.get('bankselect')
+      #return(str(bank))
+
       f = request.files['file']
       f.save(f.filename)
-      testf = doupload(f)
-      return testf
+      result = clean(f.filename,bank)
+      return result

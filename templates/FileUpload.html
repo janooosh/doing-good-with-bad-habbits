@@ -67,9 +67,25 @@
         <!-- File Upload Form-->
         <p>
             <form action="/upload" method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">Please upload your banking data in a .csv file:</label>
-                    <input name="file" type="file" class="form-control-file" value="Upload file" id="exampleFormControlFile1">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Please upload your banking data in a .csv file:</label>
+                            <input name="file" type="file" class="form-control-file" value="Upload file"
+                                id="exampleFormControlFile1">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="bankselect">Please select your bank.</label>
+                            <select name="bankselect" class="form-control" id="bankselect">
+                                <option value="danskebank">DanskeBank</option>
+                                <option value="sydbank">Sydbank</option>
+                                <option value="n26">N26</option>
+                                <option value="dkb">DKB</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -97,17 +113,17 @@
                     <td>Spisesturne</td>
                     <td>15 DKK</td>
                     <td>Food</td>
-                    <td> 
-                    <input class="form-check-input" type="radio" value="" name="four" id="checkbox_good">
-                    <label class="form-check-label" for="checkbox_good">
-                        Good
-                    </label>
-                    <input class="form-check-input" type="radio" value="" name="four" id="checkbox_bad">
-                    <label class="form-check-label" for="checkbox_bad">
-                        Bad
-                    </label>
+                    <td>
+                        <input class="form-check-input" type="radio" value="" name="four" id="checkbox_good">
+                        <label class="form-check-label" for="checkbox_good">
+                            Good
+                        </label>
+                        <input class="form-check-input" type="radio" value="" name="four" id="checkbox_bad">
+                        <label class="form-check-label" for="checkbox_bad">
+                            Bad
+                        </label>
                     </td>
-                    
+
                 </tr>
                 <tr>
                     <th scope="row">2</th>
@@ -115,15 +131,15 @@
                     <td>Lidl</td>
                     <td>195,50 DKK</td>
                     <td>Groceries</td>
-                    <td> 
-                            <input class="form-check-input" type="radio" value="" name="three" id="checkbox_good">
-                            <label class="form-check-label" for="checkbox_good">
-                                Good
-                            </label>
-                            <input class="form-check-input" type="radio" value="" name="three" id="checkbox_bad">
-                            <label class="form-check-label" for="checkbox_bad">
-                                Bad
-                            </label>
+                    <td>
+                        <input class="form-check-input" type="radio" value="" name="three" id="checkbox_good">
+                        <label class="form-check-label" for="checkbox_good">
+                            Good
+                        </label>
+                        <input class="form-check-input" type="radio" value="" name="three" id="checkbox_bad">
+                        <label class="form-check-label" for="checkbox_bad">
+                            Bad
+                        </label>
                     </td>
                 </tr>
                 <tr>
@@ -132,86 +148,86 @@
                     <td>Zara</td>
                     <td>322,15 DKK</td>
                     <td>Shopping</td>
-                    <td> 
-                            <input class="form-check-input" type="radio" value="" name="one" id="checkbox_good">
-                            <label class="form-check-label" for="checkbox_good">
-                                Good
-                            </label>
-                            <input class="form-check-input" type="radio" name="one" value="" id="checkbox_bad">
-                            <label class="form-check-label" for="checkbox_bad">
-                                Bad
-                            </label>
+                    <td>
+                        <input class="form-check-input" type="radio" value="" name="one" id="checkbox_good">
+                        <label class="form-check-label" for="checkbox_good">
+                            Good
+                        </label>
+                        <input class="form-check-input" type="radio" name="one" value="" id="checkbox_bad">
+                        <label class="form-check-label" for="checkbox_bad">
+                            Bad
+                        </label>
                     </td>
                 </tr>
-                <tr class="badTransaction" >
+                <tr class="badTransaction">
                     <th scope="row">4</th>
                     <td>05.11.2019</td>
                     <td>McDonalds</td>
                     <td>150 DKK</td>
                     <td>Fast Food</td>
-                    <td> 
-                            <input class="form-check-input" type="radio" name="two" value="" id="checkbox_good">
-                            <label class="form-check-label" for="checkbox_good">
-                                Good
-                            </label>
-                            <input class="form-check-input" type="radio" value="" name="two" id="checkbox_bad">
-                            <label class="form-check-label" for="checkbox_bad">
-                                Bad
-                            </label>
+                    <td>
+                        <input class="form-check-input" type="radio" name="two" value="" id="checkbox_good">
+                        <label class="form-check-label" for="checkbox_good">
+                            Good
+                        </label>
+                        <input class="form-check-input" type="radio" value="" name="two" id="checkbox_bad">
+                        <label class="form-check-label" for="checkbox_bad">
+                            Bad
+                        </label>
                     </td>
                 </tr>
                 <tr>
-                        <th scope="row">5</th>
-                        <td>04.11.2019</td>
-                        <td>Meny</td>
-                        <td>45,90 DKK</td>
-                        <td>Groceris</td>
-                        <td> 
-                                <input class="form-check-input" type="radio" value="" name="five" id="checkbox_good">
-                                <label class="form-check-label" for="checkbox_good">
-                                    Good
-                                </label>
-                                <input class="form-check-input" type="radio" name="five" value="" id="checkbox_bad">
-                                <label class="form-check-label" for="checkbox_bad">
-                                    Bad
-                                </label>
-                        </td>
-                    </tr>
+                    <th scope="row">5</th>
+                    <td>04.11.2019</td>
+                    <td>Meny</td>
+                    <td>45,90 DKK</td>
+                    <td>Groceris</td>
+                    <td>
+                        <input class="form-check-input" type="radio" value="" name="five" id="checkbox_good">
+                        <label class="form-check-label" for="checkbox_good">
+                            Good
+                        </label>
+                        <input class="form-check-input" type="radio" name="five" value="" id="checkbox_bad">
+                        <label class="form-check-label" for="checkbox_bad">
+                            Bad
+                        </label>
+                    </td>
                 </tr>
-                <tr class="badTransaction" >
+                </tr>
+                <tr class="badTransaction">
                     <th scope="row">6</th>
                     <td>08.11.2019</td>
                     <td>Subway</td>
                     <td>75 DKK</td>
                     <td>Fast Food</td>
-                    <td> 
-                            <input class="form-check-input" type="radio" name="six" value="" id="checkbox_good">
-                            <label class="form-check-label" for="checkbox_good">
-                                Good
-                            </label>
-                            <input class="form-check-input" type="radio" value="" name="six" id="checkbox_bad">
-                            <label class="form-check-label" for="checkbox_bad">
-                                Bad
-                            </label>
+                    <td>
+                        <input class="form-check-input" type="radio" name="six" value="" id="checkbox_good">
+                        <label class="form-check-label" for="checkbox_good">
+                            Good
+                        </label>
+                        <input class="form-check-input" type="radio" value="" name="six" id="checkbox_bad">
+                        <label class="form-check-label" for="checkbox_bad">
+                            Bad
+                        </label>
                     </td>
                 </tr>
                 <tr>
-                        <th scope="row">7</th>
-                        <td>10.11.2019</td>
-                        <td>Nexus</td>
-                        <td>25 DKK</td>
-                        <td>Party</td>
-                        <td> 
-                                <input class="form-check-input" type="radio" value="" name="seven" id="checkbox_good">
-                                <label class="form-check-label" for="checkbox_good">
-                                    Good
-                                </label>
-                                <input class="form-check-input" type="radio" name="seven" value="" id="checkbox_bad">
-                                <label class="form-check-label" for="checkbox_bad">
-                                    Bad
-                                </label>
-                        </td>
-                    </tr>
+                    <th scope="row">7</th>
+                    <td>10.11.2019</td>
+                    <td>Nexus</td>
+                    <td>25 DKK</td>
+                    <td>Party</td>
+                    <td>
+                        <input class="form-check-input" type="radio" value="" name="seven" id="checkbox_good">
+                        <label class="form-check-label" for="checkbox_good">
+                            Good
+                        </label>
+                        <input class="form-check-input" type="radio" name="seven" value="" id="checkbox_bad">
+                        <label class="form-check-label" for="checkbox_bad">
+                            Bad
+                        </label>
+                    </td>
+                </tr>
                 </tr>
             </tbody>
         </table>
