@@ -7,6 +7,11 @@ body {
     text-align: center;
 }
 
+.navbar {
+     background: #FFDAB9;
+    border-color: #FFDAB9;
+ }
+
 #content {
     text-align: center;
     padding-top: 20%;
@@ -27,9 +32,16 @@ h2 {
 }
 
 #button1 {
-    background-color: #FFDAB9;
-    border-color: #FFDAB9;
-    color: black;
+    border-radius: 20px;
+    border: 1px solid #B2987F;
+    background-color: #B2987F;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
 }
 
 .form-inline {
@@ -50,13 +62,13 @@ h2 {
 
 form {
     text-align: center;
-    padding: 0 30px;
+    padding: 0 60px;
 }
 
 input {
     background-color: rgb(239, 239, 239);
     padding: 13px 17px;
-    margin: 7px 0;
+    margin: 7px 110px;
     width: 50%;
     border: none;
 }
