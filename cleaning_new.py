@@ -1,5 +1,7 @@
 import pandas as pd
 import re
+from fastai import *
+from fastai.text import *
 
 def clean(file,bank):
     if bank == 'danskebank':
@@ -97,9 +99,46 @@ def clean(file,bank):
     df['Text'] = df['Text'].replace({'\)\)\)\)':''}, regex = True)
     df['Text'] = df['Text'].replace({'\)\)\)':''}, regex = True)
 
-    return(df.to_string(max_rows=10))
-    print(df.head())
-                                        
+
+    #START THE PREDICTION
+
+    learn = load_learner('model')
+    result = learn.predict('lidl med some text')
+
+    return(result)
+
+"""
+    return (result)
+
+    #Append column
+    df['Prediction'] = df.apply(lambda _: '', axis=1)
+
+    for i in range(df.shape[0]):
+        df['Prediction'][i] = learn.predict(df['Text'][i])
+
+    df['Prediction'] = df['Prediction'].astype(str)
+
+    def clean_predictions(programme): 
+        # Search for comma in the name followed by any characters repeated any number of times 
+        if re.search('\,.*', programme): 
+    
+            # Extract the position of beginning of pattern 
+            pos = re.search('\,.*', programme).start() 
+            pos1 = (programme).find(' ')
+    
+            # return the cleaned name 
+            return programme[pos1+1:pos] 
+    
+        else: 
+            #if none of those patterns found, return the original name
+            return programme 
+            
+    # Updated the study programme columns 
+    df['Prediction'] = df['Prediction'].apply(clean_predictions)
+        return(df.to_string(max_rows=10))
+        print(df.head())
+                                            
                         
     #Export the cleaned data
     df.to_csv('Data_Cleaned.csv', index =False)
+    """
