@@ -16,8 +16,8 @@ p {
 }
 
 .navbar {
-    background: #FFDAB9;
-    border-color: #FFDAB9;
+    background: #F5F5F5;
+    border-color: #F5F5F5;
 }
 
 .badTransaction {
@@ -28,9 +28,7 @@ p {
     padding-left:0;
 }
 
-#yt {
-    background-color: #B2987F;
-}
+
 
 #btt {
     border-radius: 20px;

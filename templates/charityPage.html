@@ -1,62 +1,108 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>How to donate</title>
+    <meta charset="UTF-8">
+    <title>File Upload Page</title>
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="charityPage.css">
+    <link rel="stylesheet" type="text/css" href="FileUpload.css">
 
     <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-left: 0;">
+                <ul class="nav navbar-nav">
+                    <li><a style="padding-left:0;" href="">Home</a></li>
+                    <li><a style="padding-left:0;" href="">About</a></li>
+                    <li><a style="padding-left:0;" href="">Contact</a></li>
+                    <li><a style="padding-left:0;" href="">Help</a></li>
+                </ul>
+
+                <form method="post" action="../upload.py" class="form-inline" id="SignIn">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">Your Dashboard</a></li>
+                        <li><a href="">Your Transactions Overview</a></li>
+                        <li class="active"><a id="yt" href="">Your Charity</a></li>
+                        <li><a href="">Profile</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- File Upload Content -->
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+        <div class="row">
+            <div class="col-md-0"></div>
+            <div id="content" class="col-lg-8" style="margin-bottom: 50px;">
+                <h1>FIND YOUR CHARITY</h1>
+            </div>
+            <div class="col-md-4"></div>
         </div>
 
+       
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding-left: 0;">
-            <ul class="nav navbar-nav">
-                <li><a style="padding-left:0;" href="">Home</a></li>
-                <li><a style="padding-left:0;" href="">About</a></li>
-                <li><a style="padding-left:0;" href="">Contact</a></li>
-                <li><a style="padding-left:0;" href="">Help</a></li>
-            </ul>
-
-        </div>
-    </div>
-</nav>
-
-<div class="container">
+ <!--Search-->
     <div class="row">
-        <div class="col-md-2"></div>
-            <h1 class="texsst">Your charity</h1>
-            <hr>
-            <form>
-            <input id="search" type="search" placeholder="Your charity">
-            <hr>
-            <button id="button1" class="btn btn-default btn-lg"> Search your charity </button>
+        <div class="col-md-12">
+            <form class="navbar-form navbar-center" style="padding-left:0" class="form-control" role="search" id="searchbar" style="margin-bottom: 20px;">
+            <input type="text" class="search-query" placeholder=" ">
             </form>
-            <h2>Can't find your charity? Look for inspiration below or add your own here!</h2>
         </div>
-        <div class="col-md-2"></div>
-    </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+    <div class="form-group" style="margin-bottom: 50px;">
+        <button id= "btt" type="submit" class="btn btn-primary">Search</button>
+    </div>
+    </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+        <div id="morecharities">
+            <h4>Can't find your Charity? Find Inspiration below or add your own Charity!</h4>
+         </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <p class="lead">Exemplary Charities come here</p>
+        </div>
+    </div>
+
 
 </body>
+
+</html>
