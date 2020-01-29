@@ -28,7 +28,7 @@ p {
     padding-left:0;
 }
 
-#button1 {
+#btt {
     border-radius: 20px;
     border: 1px solid #B2987F;
     background-color: #B2987F;
@@ -40,4 +40,13 @@ p {
     text-transform: uppercase;
     transition: transform 80ms ease-in;
 
+}
+
+.glyphicon {
+    font-size: 30px;
+    color: #808080;
+}
+
+big {
+    color: grey;
 }
