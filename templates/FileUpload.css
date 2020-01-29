@@ -43,3 +43,7 @@ p {
     transition: transform 80ms ease-in;
 
 }
+
+.hide_table {
+display: none;
+}

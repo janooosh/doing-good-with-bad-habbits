@@ -4,6 +4,8 @@ const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 const loginbtn = document.getElementById('login_btn');
 const rgstr_btn = document.getElementById('rgstr_btn');
+const submit_btn = document.getElementById('btt');
+const transatcion_tbl = document.getElementById('transatcion_tbl');
 
 rgstr_btn.addEventListener('click', () => {
     register();
@@ -20,6 +22,11 @@ loginbtn.addEventListener ('click', () => {
 signUpButton.addEventListener('click', () => {
     container.classList.add("right-panel-active");
 });
+
+submit_btn.addEventListener('click', () => {
+    transatcion_tbl.classList.remove('hide_table');
+});
+
 
 signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
