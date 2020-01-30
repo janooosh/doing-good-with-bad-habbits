@@ -47,3 +47,7 @@ p {
 .hide_table {
 display: none;
 }
+
+.hider {
+    display:none;
+}

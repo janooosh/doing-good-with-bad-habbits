@@ -4,7 +4,7 @@ const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
 const loginbtn = document.getElementById('login_btn');
 const rgstr_btn = document.getElementById('rgstr_btn');
-const submit_btn = document.getElementById('btt');
+var submit_btn = document.getElementById('btt');
 const transatcion_tbl = document.getElementById('transatcion_tbl');
 
 rgstr_btn.addEventListener('click', () => {
@@ -24,6 +24,7 @@ signUpButton.addEventListener('click', () => {
 });
 
 submit_btn.addEventListener('click', () => {
+    alert("i am pressed");
     transatcion_tbl.classList.remove('hide_table');
 });
 
